@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TO DO LIST</title>
+</head>
+<body>
+  <h1>TO DO LIST</h1>
+  <input type="text" placeholder="Enter your list" id="input-box">
+  <button onclick="add()">Add</button>
+  <ul id="output-box"></ul>
+
+  <script>
+    const inputBox = document.getElementById("input-box");
+    const outputBox = document.getElementById("output-box");
+
+    function add() {
+      if (inputBox.value === "") {
+        alert("You must write something");
+      } else {
+        let li = document.createElement("li");
+        li.innerHTML = `
+          ${inputBox.value}
+          <span class="done"> Completed </span>
+          <span class="remove"> Remove Task </span>
+        `;
+        outputBox.appendChild(li);
+        inputBox.value = "";
+        saveData();
+      }
+    }
+
+    outputBox.addEventListener("click", function (e) {
+      const target = e.target;
+      const li = target.closest("li");
+
+      if (target.classList.contains("done")) {
+        li.style.textDecoration =
+          li.style.textDecoration === "line-through" ? "none" : "line-through";
+      }
+
+      if (target.classList.contains("remove")) {
+        li.remove();
+      }
+
+      saveData();
+    });
+
+    function saveData() {
+      localStorage.setItem("data", outputBox.innerHTML);
+    }
+
+    function showData() {
+      outputBox.innerHTML = localStorage.getItem("data");
+    }
+
+    showData();
+
+
+
+
+    let name = "   Alice   ";
+    let cleanName = name.trim();
+
+    console.log(cleanName); // "Alice"
+
+  </script>
+
+
+</body>
+</html>
