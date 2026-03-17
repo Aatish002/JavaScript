@@ -79,10 +79,9 @@ const grade = students.map((i) => {
 });
 console.log(grade);
 
-const passingStudents=students.filter((i)=>i.marks>=50);
+const passingStudents = students.filter((i) => i.marks >= 50);
 console.log(passingStudents);
 
-
-const totalMarks=students.reduce((acc,current)=>acc+current.marks,0);
-const averageTotalMarks=totalMarks/students.length;
+const totalMarks = students.reduce((acc, current) => acc + current.marks, 0);
+const averageTotalMarks = totalMarks / students.length;
 console.log(averageTotalMarks);

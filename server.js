@@ -1,16 +1,15 @@
-const http = require('http');
-const server = http.createServer((req,res)=>{
-    const {url,method}=req;
-    if (url==="/"&& method==="GET"){
-        res.writeHead(401,{"Content-Type":"text/plain"});
-        res.end("Hello World")
-    }
+const http = require("http");
+const server = http.createServer((req, res) => {
+  const { url, method } = req;
+  if (url === "/" && method === "GET") {
+    res.writeHead(401, { "Content-Type": "text/plain" });
+    res.end("Hello World");
+  }
 });
 const PORT = 5000;
-server.listen(PORT,()=>{
-    console.log(`Server listening at http://localhost:${PORT}`)
+server.listen(PORT, () => {
+  console.log(`Server listening at http://localhost:${PORT}`);
 });
-
 
 //METHODS
 //-----CRUD-----

@@ -31,12 +31,10 @@
 //     case '/':
 //     division = num1/num2;
 //     console.log(division);
-//     break; 
+//     break;
 //     default:
 //     console.log("Invalid operator")
 // };
-
-
 
 // let name = 11.8888888888;
 // let uppercase=name.parseInt();
@@ -47,9 +45,6 @@
 // console.log(add (9,7));
 // console.log(add (4,2));
 // console.log(add (2,3));
-
-
-
 
 // table = ()=>{for(let i=1;i<=10;i++){
 //    for (a=0;a<i;a++){
@@ -91,17 +86,14 @@
 //     doubledFor.push(num*2)
 // });
 
-
 // let doubled = nums.map((num)=>num*2);
 // console.log(doubledFor);
 
-
-let str= "aokfaijfslajfjakjfjasksjdflkjalskdfjlasjdfjas;ljdfjalkdsjflasdjfjaslkjdflkajsdfdljasljdflsakjkdfjasldjflasjdf alkdjflkasjfdljk";
-let strLength=str.length;
-if(strLength > 15){
-    console.log(str.slice(0,12)+"......");
+let str =
+  "aokfaijfslajfjakjfjasksjdflkjalskdfjlasjdfjas;ljdfjalkdsjflasdjfjaslkjdflkajsdfdljasljdflsakjkdfjasldjflasjdf alkdjflkasjfdljk";
+let strLength = str.length;
+if (strLength > 15) {
+  console.log(str.slice(0, 12) + "......");
 }
 
-
 // console.log(strLength);
-

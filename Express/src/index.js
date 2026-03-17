@@ -8,18 +8,20 @@ const app = express();
 const port = 5000;
 const hostname = "127.0.0.1";
 
-
-
-app.get('/', (req, res) => {
-    res.send("Server is running!!");
+app.get("/", (req, res) => {
+  res.send("Server is running!!");
 });
 
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(cookieParser());
 
-app.use("/api/auth",authRoutes); 
+app.use("/api/auth", authRoutes);
 
 connectDB()
-.then(() => app.listen(port, hostname, () => console.log(`Server running successfully at http://${hostname}:${port}`)))
-.catch((err) => console.log("Error in connection:", err));
+  .then(() =>
+    app.listen(port, hostname, () =>
+      console.log(`Server running successfully at http://${hostname}:${port}`),
+    ),
+  )
+  .catch((err) => console.log("Error in connection:", err));

@@ -32,7 +32,6 @@
 // );
 // console.log(newObj);
 
-
 // const arr=["mango","banana","apple"];
 // const newArr=arr.map((i)=>i.toUpperCase());
 // console.log(newArr);
@@ -48,8 +47,3 @@
 // const arr=[1,2,3,4];
 // const newArr=arr.map((i)=>i*i);
 // console.log(newArr);
-
-
-
-
-

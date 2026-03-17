@@ -13,7 +13,6 @@
 //   C: ["Diana"]
 // }
 
-
 // 2.Count occurrences of each word using a single reduce
 // const words = ["apple", "banana", "apple", "orange", "banana", "apple"];
 // output:
@@ -22,7 +21,6 @@
 //   banana: 2,
 //   orange: 1
 // }
-
 
 //  const students = [
 //    { name: "Alice", grade: "A" },
@@ -37,15 +35,12 @@
 // },{})
 // console.log(catagorizedStudents);
 
-
 // const words = ["apple", "banana", "apple", "orange", "banana", "apple"];
 // const repeatedWords=words.reduce((acc,current)=>{
 //     acc[current]=(acc[current]||0)+1
 //     return acc;
 // },{})
 // console.log(repeatedWords);
-
-
 
 // Group products by category AND count how many products are in each category using a single reduce.
 
@@ -65,23 +60,21 @@
 //   Food:        { items: ["Apple"],                 count: 1 }
 
 const products = [
-   { name: "Laptop", category: "Electronics" },
-   { name: "Headphones", category: "Electronics" },
-   { name: "T-shirt", category: "Clothing" },
-   { name: "Jeans", category: "Clothing" },
-   { name: "Apple", category: "Food" }
- ];
+  { name: "Laptop", category: "Electronics" },
+  { name: "Headphones", category: "Electronics" },
+  { name: "T-shirt", category: "Clothing" },
+  { name: "Jeans", category: "Clothing" },
+  { name: "Apple", category: "Food" },
+];
 
+const catagorizedProducts = products.reduce((acc, current) => {
+  acc[current.category] = acc[current.category] || [];
+  acc[current.category].push(current.name);
 
-const catagorizedProducts=products.reduce((acc,current)=>{
-    acc[current.category]=acc[current.category]||[]
-    acc[current.category].push(current.name);
-
-    
-    return acc;
-},{})
-const count = products.reduce((acc,current)=>{
-  acc[current.category]=(acc[current.category]||0)+1
   return acc;
-},{})
-console.log(catagorizedProducts,count);
+}, {});
+const count = products.reduce((acc, current) => {
+  acc[current.category] = (acc[current.category] || 0) + 1;
+  return acc;
+}, {});
+console.log(catagorizedProducts, count);

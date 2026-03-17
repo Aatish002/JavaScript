@@ -1,4 +1,4 @@
-// 1. Variables are case sensetive 
+// 1. Variables are case sensetive
 // 2. Variables names can contain letters, digits, underscores, dollar Signs
 // 3. Variables names must begin with a ByteLengthQueuingStrategy, underscore, or dollar sign.
 // 4. Variables names cannot be JavaScriot reserved words
@@ -8,7 +8,7 @@
 // to number
 // from String,null,undefined,boolean
 
-//to boolean 
+//to boolean
 //from Number,String,emoty string
 
 //to string
@@ -28,7 +28,6 @@
 // const numberedUndef=Number(undef);
 // console.log("Type of numberedUndef",tyoeof(numberedUndef));
 // console.log("Value of numberedUndef",numberedUndef);
-
 
 // let emptyStr = "";
 // const numberedEmptyStr =Number(emptyStr);
@@ -52,10 +51,10 @@
 
 const num = 123;
 let a = null;
-const strNum=String(a);
+const strNum = String(a);
 const methodConversion = a.toString();
 console.log("value of methodConversion", methodConversion);
-console.log("type of methodConversion", typeof(methodConversion));
+console.log("type of methodConversion", typeof methodConversion);
 console.log("value of strNum", strNum);
-console.log("type of strNum", typeof(strNum));
+console.log("type of strNum", typeof strNum);
 // console.log(The value of num is ${num} and the type of num is ${typeof num})

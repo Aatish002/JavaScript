@@ -1,18 +1,14 @@
-function Person(){
-    this.name ="Elon Musk"
+function Person() {
+  this.name = "Elon Musk";
 }
 
-Person.prototype.age=25;
+Person.prototype.age = 25;
 
+const person1 = new Person();
 
-const person1 =new Person();
+Person.protototype = { age: 52 };
 
-
-Person.protototype ={age: 52}
-
-
-const person2 = new Person()
-
+const person2 = new Person();
 
 console.log(person1.age);
 console.log(person2.age);

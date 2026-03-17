@@ -1,37 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    .box{
-        width: 200px;
-        height: 200px;
-        background-color:red;
+  </head>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: red;
     }
-
-</style>
-<body>
+  </style>
+  <body>
     <div class="box">
-        <h1 id="h1">Hover to Change color</h1>
+      <h1 id="h1">Hover to Change color</h1>
     </div>
-    
-    
-    
-</body>
-<script>
-        const box=document.querySelector('div');
-        box.addEventListener("mouseover", ()=>{
-            box.style.backgroundColor="blue";
-            console.log(box)
-        });
-        box.addEventListener("mouseout", ()=>{
-            box.style.backgroundColor="red";
-            console.log(box)
-        });
-
-        
-</script>
+  </body>
+  <script>
+    const box = document.querySelector("div");
+    box.addEventListener("mouseover", () => {
+      box.style.backgroundColor = "blue";
+      console.log(box);
+    });
+    box.addEventListener("mouseout", () => {
+      box.style.backgroundColor = "red";
+      console.log(box);
+    });
+  </script>
 </html>

@@ -1,4 +1,4 @@
-// 1. Capitalize first letter of your name 
+// 1. Capitalize first letter of your name
 // let name = "aatish";
 // console.log(name[0].toUpperCase()+name.slice(1));
 

@@ -48,8 +48,6 @@
 //   Fantasy: ["The Hobbit"]
 // }
 
-
-
 // const arrayOfUserObject=[
 //     {
 //         name:"Aatish",
@@ -71,7 +69,6 @@
 // const email = arrayOfUserObject.map((i)=>i.email);
 // console.log(email);
 
-
 // const products = [
 //    { name: "Laptop", active: true },
 //    { name: "Phone", active: false },
@@ -80,14 +77,12 @@
 // const activeProducts=products.filter((i)=>i.active===true);
 // console.log(activeProducts);
 
-
 // const orders = [
 //    { orderId: 1, amount: 250 },
 //    { orderId: 2, amount: 450 },
 // ];
 // const totalRevenue=orders.reduce((i,j)=>i.amount+j.amount);
 // console.log(totalRevenue);
-
 
 // const users = [
 //    { name: "Alice", logins: { web: 4, mobile: 6 } },
@@ -100,13 +95,11 @@
 // }));
 // console.log(totalUser);
 
-
 // const books = [
 //   { title: "1984", genre: "Dystopian" },
 //   { title: "Brave New World", genre: "Dystopian" },
 //   { title: "The Hobbit", genre: "Fantasy" },
 // ];
-
 
 // const obj = {
 //   name: 'arin',
@@ -122,8 +115,6 @@
 // }, {});
 
 // console.log('categorized books', CategorizedBooks);
-
-
 
 // const movies = [
 //   { title: "The Matrix", year: 1999 },
